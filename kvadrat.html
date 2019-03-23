@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> вадрат</title>
+<style type="text/css">
+ @keyframes turning{
+  0%{
+	border-radius: 0 0 0 0;
+	transform: rotate(0deg); }
+  25%{
+	border-radius: 10% 10% 10% 10%;
+	transform: rotate(15deg); }
+  50%{
+	border-radius: 10% 10% 10% 10%;
+	transform: rotate(0deg); }
+  75%{
+	border-radius: 10% 10% 10% 10%;
+	transform: rotate(-15deg); }
+  100%{
+	border-radius: 10% 10% 10% 10%;
+	transform: rotate(0deg); }}
+img{
+	width:320px;
+	height: 220px;
+	float: left;
+	margin: 100px;
+	opacity: 0.8;
+	animation: turning 4s ease-out 2s infinite alternate;}
+img:hover {
+	animation-play-state:paused;
+	width:420px;
+	height: 270px;
+	opacity: 1;
+	transition-duration: 2s;
+	
+}
+
+
+</style>
+</head>
+<body>
+<div class="img"><img src="animation/1.jpg"></div>
+<div class="img"><img src="animation/2.jpg"></div>
+<div class="img"><img src="animation/3.jpg"></div>
+<div class="img"><img src="animation/4.jpg"></div>
+<div class="img"><img src="animation/5.jpg"></div>
+
+</body>			
